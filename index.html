@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Prediction</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Predict Student Result</h1>
+    <form action="/predict" method="post">
+        <table align="center" style="border-spacing: 10px;">
+            <tr>
+                <td><label for="study_hours">Study Hours:</label></td>
+                <td><input type="text" id="study_hours" name="study_hours" placeholder="Enter study hours" required></td>
+            </tr>
+            <tr>
+                <td><label for="exam_score">Previous Exam Score:</label></td>
+                <td><input type="text" id="exam_score" name="exam_score" placeholder="Enter exam score" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Predict">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
